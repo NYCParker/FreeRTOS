@@ -26,7 +26,7 @@
  */
 
 
-__asm vRegTest1Task( void )
+void __asm vRegTest1Task( void )
 {
 	PRESERVE8
 	IMPORT ulRegTest1LoopCounter
@@ -209,7 +209,7 @@ reg1_error_loop
 }
 /*-----------------------------------------------------------*/
 
-__asm vRegTest2Task( void )
+void __asm vRegTest2Task( void )
 {
 	PRESERVE8
 	IMPORT ulRegTest2LoopCounter
@@ -401,7 +401,7 @@ reg2_error_loop
 }
 /*-----------------------------------------------------------*/
 
-__asm vRegTestClearFlopRegistersToParameterValue( unsigned long ulValue	)
+void __asm vRegTestClearFlopRegistersToParameterValue( unsigned long ulValue	)
 {
 	PRESERVE8
 
@@ -418,7 +418,7 @@ __asm vRegTestClearFlopRegistersToParameterValue( unsigned long ulValue	)
 }
 /*-----------------------------------------------------------*/
 
-__asm ulRegTestCheckFlopRegistersContainParameterValue( unsigned long ulValue )
+void __asm ulRegTestCheckFlopRegistersContainParameterValue( unsigned long ulValue )
 {
 	PRESERVE8
 
